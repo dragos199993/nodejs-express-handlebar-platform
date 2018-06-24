@@ -44,7 +44,7 @@ app.get("/about", (req, res) => {
   });
 });
 app.get("/contact", (req, res) => {
-  res.render("about.hbs", {
+  res.render("contact.hbs", {
     pageTitle: "Contact"
   });
 });
