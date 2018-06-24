@@ -43,6 +43,11 @@ app.get("/about", (req, res) => {
     pageTitle: "About page"
   });
 });
+app.get("/contact", (req, res) => {
+  res.render("about.hbs", {
+    pageTitle: "Contact"
+  });
+});
 app.get("/bad", (req, res) => {
   res.send({
     error: "Something went wrong."
